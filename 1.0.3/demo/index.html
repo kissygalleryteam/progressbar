@@ -54,7 +54,7 @@
         S.config({
             packages:[
                 {
-                    name:"kg/progressbar/1.0.2",
+                    name:"kg/progressbar/1.0.3",
                     path:debugPath,
                     charset:"utf-8",
                     ignorePackageNameInUri:true
@@ -63,7 +63,7 @@
         });
     }
 
-    S.use('node, kg/progressbar/1.0.2/index', function (S, Node, Progressbar) {
+    S.use('node, kg/progressbar/1.0.3/index', function (S, Node, Progressbar) {
         var $ = Node.all;
         var circle = new Progressbar.Circle('#landing-progress', {
             color: "#FCB03C",
