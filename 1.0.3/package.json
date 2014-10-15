@@ -1,6 +1,6 @@
 {
     "name": "progressbar",
-    "version": "1.0.3",
+    "version": "1.0.1",
     "devDependencies": {
         "gulp": "^3.8.7",
         "gulp-mini-css": "^0.0.1",

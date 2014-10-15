@@ -2,9 +2,9 @@
 
 ## 综述
 * Progressbar是一个SVG动态进度条显示组件。抱着不重复造轮子的思想，它是由[progressbar](https://github.com/kimmobrunfeldt/progressbar.js)插件进行kissy的封装而来的。
-* 版本：1.0.3
-* 教程：[http://gallery.kissyui.com/progressbar/1.0.3/guide/index.html](http://gallery.kissyui.com/progressbar/1.0.3/guide/index.html)
-* demo：[http://gallery.kissyui.com/progressbar/1.0.3/demo/index.html](http://gallery.kissyui.com/progressbar/1.0.3/demo/index.html)
+* 版本：1.0.1
+* 教程：[http://gallery.kissyui.com/progressbar/1.0.1/guide/index.html](http://gallery.kissyui.com/progressbar/1.0.1/guide/index.html)
+* demo：[http://gallery.kissyui.com/progressbar/1.0.1/demo/index.html](http://gallery.kissyui.com/progressbar/1.0.1/demo/index.html)
 
 ## 浏览器支持
 * 支持主流浏览器含 **IE9**.
@@ -334,7 +334,7 @@ for path.
 
 ## changelog
 
-### V1.0.3
+### V1.0.1
 
     [!]
 
