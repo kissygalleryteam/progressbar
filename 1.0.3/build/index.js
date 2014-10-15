@@ -5,7 +5,7 @@ combined files by KMD:
 index.js
 */
 
-KISSY.add('kg/progressbar/1.0.1/index',[],function(S ,require, exports, module) {
+KISSY.add(function(S ,require, exports, module) {
     var EASING_ALIASES = {
         easeIn: 'easeInCubic',
         easeOut: 'easeOutCubic',
