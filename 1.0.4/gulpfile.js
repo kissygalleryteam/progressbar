@@ -6,7 +6,7 @@ var src = ".",
     dest = "./build";
 
 //包配置
-var pkg = "kg/progressbar/1.0.3";
+var pkg = "kg/progressbar/1.0.4";
 
 //编译模板
 gulp.task('xtpl', function() {
