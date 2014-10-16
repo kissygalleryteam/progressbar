@@ -50,22 +50,35 @@
 
 <script>
     var S = KISSY;
-    if (S.Config.debug) {
-         var debugPath = "../build";
-         S.config({
-             packages:[
-                 {
-                     name:"kg/progressbar/2.0.0",
-                     path:debugPath,
-                     charset:"utf-8",
-                     ignorePackageNameInUri:true
-                 }
-             ]
-         });
-    }
+    // if (S.Config.debug) {
+    //     var debugPath = "../build";
+    //     console.log(S.config);
+    //     S.config({
+    //         packages:[
+    //             {
+    //                 name:"kg/progressbar/1.0.4",
+    //                 path:debugPath,
+    //                 charset:"utf-8",
+    //                 ignorePackageNameInUri:true
+    //             }
+    //         ]
+    //     });
+    // }
+    // S.use('node, kg/progressbar/1.0.4/index', function (S, Node, Progressbar) {
 
-    S.use('node,kg/progressbar/2.0.0/index', function(S, Node, Progressbar) {
+    S.config({
+        packages: {
+            "index": {
+                base: "http://g.alicdn.com/kg/progressbar/1.0.4/index",
+                debug: true,
+                ignorePackageNameInUri: true
+            }
+        }
+    });
+
+    S.use('node,index', function(S, Node, Progressbar) {
         var $ = Node.all;
+        console.log(Progressbar);
         var circle = new Progressbar.Circle('#landing-progress', {
             color: "#FCB03C",
             strokeWidth: 1.5,
