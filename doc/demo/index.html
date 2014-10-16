@@ -5,9 +5,11 @@
     <title>Progressbar的demo</title>
     <link rel="stylesheet" type="text/css" href="./index.css"/>
     <script src="http://g.tbcdn.cn/kissy/k/1.4.6/seed-min.js" charset="utf-8"></script>
+    <script src="../lib/shifty.js"></script>
 </head>
 <body>
 <h2>Progressbar的demo</h2>
+<h2>刷新页面查看效果</h2>
 <div id="landing" class="no-user-select full-window">
     <div class="background">
         <div class="landing-progress" id="landing-progress"></div>
@@ -22,18 +24,21 @@
     <div class="content">
         <h1>Examples</h1>
         <div id="example-line" class="example">
+            <h2>Line</h2>
             <div class="result">
                 <div class="example-container" id="example-line-container"></div>
             </div>
         </div>
 
         <div id="example-circle" class="example">
+            <h2>Circle</h2>
             <div class="result">
                 <div class="example-container" id="example-circle-container"></div>
             </div>
         </div>
 
         <div id="example-clock" class="example">
+            <h2>Clock</h2>
             <div class="result">
                 <div class="example-container" id="example-clock-container">
                     <p id="clock-seconds"></p>
@@ -45,28 +50,29 @@
 
 <script>
     var S = KISSY;
-    var $ = Node.all;
     if (S.Config.debug) {
-        var debugPath = "../build";
-        S.config({
-            packages:[
-                {
-                    name:"kg/progressbar/1.0.0",
-                    path:debugPath,
-                    charset:"utf-8",
-                    ignorePackageNameInUri:true
-                }
-            ]
-        });
+         var debugPath = "../build";
+         S.config({
+             packages:[
+                 {
+                     name:"kg/progressbar/2.0.0",
+                     path:debugPath,
+                     charset:"utf-8",
+                     ignorePackageNameInUri:true
+                 }
+             ]
+         });
     }
 
-    S.use('node,kg/progressbar/1.0.0/index', function (S, Node, Progressbar) {
+    S.use('node,kg/progressbar/2.0.0/index', function(S, Node, Progressbar) {
+        var $ = Node.all;
         var circle = new Progressbar.Circle('#landing-progress', {
             color: "#FCB03C",
             strokeWidth: 1.5,
             trailColor: null,
             fill: "#FFF9F0"
         });
+
         circle.animate(1, {
             duration: 1200,
             easing: 'easeInOut'
