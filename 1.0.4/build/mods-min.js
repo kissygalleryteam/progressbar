@@ -1,1 +1,0 @@
-KISSY.config("modules",{});
